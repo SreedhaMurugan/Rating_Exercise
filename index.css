@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.rating {
+  position: relative;
+  width: 180px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  overflow: hidden;
+}
+
+.rating_result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-10px) translateX(-5px);
+  z-index: -9;
+  pointer-events: none;
+}
+
+.rating_star {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fad91eb2;
+  transition: filter linear 0.3s;
+}
+
+.rating_star:hover {
+  filter: drop-shadow(1px 1px 4px rgb(240, 205, 12));
+}
